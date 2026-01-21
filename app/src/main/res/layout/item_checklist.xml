@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/card_background">
+
+    <CheckBox
+        android:id="@+id/checkbox_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Checklist Item"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:buttonTint="@color/aviation_blue_primary"
+        android:layoutDirection="rtl"
+        android:textAlignment="viewStart"/>
+
+</com.google.android.material.card.MaterialCardView>

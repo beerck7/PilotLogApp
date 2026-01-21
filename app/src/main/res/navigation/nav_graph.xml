@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <action
+        android:id="@+id/action_global_default"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.pilotlog.ui.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/logbookFragment"
+        android:name="com.example.pilotlog.ui.LogbookFragment"
+        android:label="Logbook"
+        tools:layout="@layout/fragment_logbook">
+        <action
+            android:id="@+id/action_logbook_to_detail"
+            app:destination="@id/flightDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_logbook_to_gforce"
+            app:destination="@id/gForceFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/flightDetailFragment"
+        android:name="com.example.pilotlog.ui.FlightDetailFragment"
+        android:label="Add Flight"
+        tools:layout="@layout/fragment_flight_detail">
+        <argument
+            android:name="flightId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gForceFragment"
+        android:name="com.example.pilotlog.ui.GForceFragment"
+        android:label="G-Force Monitor"
+        tools:layout="@layout/fragment_gforce" />
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.pilotlog.ui.MapFragment"
+        android:label="Live Map"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.pilotlog.ui.ProfileFragment"
+        android:label="Pilot Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.example.pilotlog.ui.WeatherFragment"
+        android:label="Weather"
+        tools:layout="@layout/fragment_weather" />
+
+    <fragment
+        android:id="@+id/hangarFragment"
+        android:name="com.example.pilotlog.ui.HangarFragment"
+        android:label="The Hangar"
+        tools:layout="@layout/fragment_hangar" />
+
+    <fragment
+        android:id="@+id/checklistFragment"
+        android:name="com.example.pilotlog.ui.ChecklistFragment"
+        android:label="Checklists"
+        tools:layout="@layout/fragment_checklist" />
+
+    <fragment
+        android:id="@+id/horizonFragment"
+        android:name="com.example.pilotlog.ui.HorizonFragment"
+        android:label="Artificial Horizon"
+        tools:layout="@layout/fragment_horizon" />
+
+    <fragment
+        android:id="@+id/importFragment"
+        android:name="com.example.pilotlog.ui.ImportFragment"
+        android:label="Import Flights"
+        tools:layout="@layout/fragment_import" />
+        
+</navigation>
+

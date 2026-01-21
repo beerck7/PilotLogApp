@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="@string/nav_dashboard" />
+    <item
+        android:id="@+id/logbookFragment"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="@string/nav_logbook" />
+    <item
+        android:id="@+id/mapFragment"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="@string/nav_map" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="@string/nav_profile" />
+    <item
+        android:id="@+id/hangarFragment"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="@string/nav_hangar" />
+</menu>

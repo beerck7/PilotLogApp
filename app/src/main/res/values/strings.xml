@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">PilotLog</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_add_aircraft">Add New Aircraft</string>
+    <string name="hint_registration">Registration (e.g. SP-ABC)</string>
+    <string name="hint_model">Model (e.g. Cessna 152)</string>
+    <string name="hint_type">Type (e.g. SEP(L))</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_add">Add</string>
+
+    <string name="label_date">Date</string>
+    <string name="label_aircraft_caps">AIRCRAFT</string>
+    <string name="label_route_caps">ROUTE</string>
+    <string name="btn_gps_fix">GPS FIX</string>
+    <string name="hint_dep">DEP</string>
+    <string name="hint_arr">ARR</string>
+    <string name="hint_duration">Duration (min)</string>
+    <string name="hint_launch_method">Launch Method</string>
+    <string name="hint_release_height">Release Height (m)</string>
+    <string name="hint_remarks">Remarks</string>
+    <string name="btn_add_photo">ADD PHOTO</string>
+    <string name="btn_log_flight">LOG FLIGHT</string>
+
+    <string name="btn_import_flights">IMPORT FLIGHTS</string>
+
+    <string name="desc_flight_image">Flight Image</string>
+
+    <string name="header_dashboard">DASHBOARD</string>
+    <string name="label_pilot_rank">PILOT RANK</string>
+    <string name="label_next_rank">NEXT: %1$s</string>
+    <string name="rank_cadet">CADET</string>
+    <string name="rank_officer">OFFICER</string>
+    <string name="rank_captain">CAPTAIN</string>
+    <string name="rank_ace">ACE</string>
+    <string name="rank_legend">LEGEND</string>
+    <string name="rank_max">MAX RANK</string>
+    <string name="rank_max_level">MAX LEVEL</string>
+    <string name="rank_progress_format">%1$d / %2$d HRS</string>
+    <string name="label_total_hours">TOTAL HOURS</string>
+    <string name="label_flights">FLIGHTS</string>
+    <string name="label_metar_auto">CURRENT METAR (AUTO)</string>
+    <string name="metar_scanning">Scanning...</string>
+    <string name="metar_no_data">No Data</string>
+    <string name="btn_gforce">G-FORCE</string>
+    <string name="btn_checklists">CHECKLISTS</string>
+    <string name="btn_horizon">HORIZON</string>
+    <string name="label_recent_missions">RECENT MISSIONS</string>
+    <string name="format_hours_minutes">%1$dh %2$dm</string>
+
+    <string name="title_pilot_profile">PILOT PROFILE</string>
+    <string name="title_flight_dna">FLIGHT DNA</string>
+    <string name="title_hall_of_fame">HALL OF FAME</string>
+    <string name="title_license_wallet">LICENSE WALLET</string>
+    <string name="label_valid">VALID</string>
+    <string name="label_in_training">IN TRAINING</string>
+    <string name="label_expiring">EXPIRING</string>
+    <string name="btn_clear_logbook">CLEAR LOGBOOK</string>
+    <string name="btn_import_echronometraz">IMPORT FROM E-CHRONOMETRAŻ</string>
+
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_logbook">Logbook</string>
+    <string name="nav_map">Map</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_hangar">Hangar</string>
+
+    <string name="title_weather_radar">WEATHER RADAR</string>
+    <string name="label_api_key">API KEY</string>
+    <string name="hint_api_key">Enter CheckWX API Key</string>
+    <string name="label_airport_code">AIRPORT CODE</string>
+    <string name="hint_airport_code">e.g. EPWA</string>
+    <string name="btn_scan">SCAN</string>
+    <string name="label_metar_current">METAR (CURRENT)</string>
+    <string name="label_taf_forecast">TAF (FORECAST)</string>
+
+    <string name="title_checklists">CHECKLISTS</string>
+    <string name="btn_reset_checklist">RESET CHECKLIST</string>
+
+    <string name="label_current_g">CURRENT G</string>
+    <string name="label_max_g">MAX G</string>
+    <string name="btn_reset_max">RESET MAX</string>
+
+    <string name="dialog_delete_title">Confirm Delete</string>
+    <string name="dialog_delete_flight_message">Delete flight %1$s → %2$s?</string>
+    <string name="dialog_delete_aircraft_message">Delete aircraft %1$s?</string>
+    <string name="action_delete">Delete</string>
+    <string name="toast_flight_deleted">Flight deleted</string>
+    <string name="toast_aircraft_deleted">Aircraft deleted</string>
+    <string name="toast_aircraft_added">Aircraft added</string>
+    <string name="toast_delete_cancelled">Deletion cancelled</string>
+
+    <string name="label_aircraft_photo">AIRCRAFT PHOTO</string>
+    <string name="btn_camera">CAMERA</string>
+    <string name="btn_gallery">GALLERY</string>
+
+    <string name="launch_self">Self-Launch</string>
+    <string name="launch_winch">Winch</string>
+    <string name="launch_aerotow">Aerotow</string>
+    <string name="launch_bungee">Bungee</string>
+
+    <string name="tab_pre_flight">PRE-FLIGHT</string>
+    <string name="tab_before_takeoff">BEFORE T/O</string>
+    <string name="tab_landing">LANDING</string>
+
+    <string name="check_documents">Documents (AROW) - CHECK</string>
+    <string name="check_control_lock">Control Lock - REMOVE</string>
+    <string name="check_ignition_off">Ignition - OFF</string>
+    <string name="check_master_on">Master Switch - ON</string>
+    <string name="check_fuel_qty">Fuel Quantity - CHECK</string>
+    <string name="check_flaps_extend">Flaps - EXTEND</string>
+    <string name="check_master_off">Master Switch - OFF</string>
+    <string name="check_exterior">Exterior Inspection - COMPLETE</string>
+
+    <string name="check_seats_belts">Seats &amp; Belts - SECURE</string>
+    <string name="check_doors">Doors &amp; Windows - LOCKED</string>
+    <string name="check_controls_free">Flight Controls - FREE &amp; CORRECT</string>
+    <string name="check_fuel_both">Fuel Selector - BOTH</string>
+    <string name="check_trim_takeoff">Elevator Trim - TAKEOFF</string>
+    <string name="check_throttle_1700">Throttle - 1700 RPM</string>
+    <string name="check_mags">Mags - CHECK (L/R)</string>
+    <string name="check_carb_heat">Carb Heat - CHECK</string>
+    <string name="check_ammeter">Ammeter - CHECK</string>
+    <string name="check_suction">Suction - CHECK</string>
+    <string name="check_idle">Idle - CHECK</string>
+    <string name="check_throttle_1000">Throttle - 1000 RPM</string>
+
+    <string name="check_mixture_rich">Mixture - RICH</string>
+    <string name="check_carb_heat_on">Carb Heat - ON</string>
+    <string name="check_landing_light">Landing Light - ON</string>
+    <string name="check_flaps_required">Flaps - AS REQUIRED</string>
+</resources>

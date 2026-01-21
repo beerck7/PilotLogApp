@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="aviation_blue_primary">#38BDF8</color> <color name="aviation_blue_dark">#0F172A</color> <color name="aviation_blue_light">#1E293B</color> <color name="sky_blue">#0284C7</color>
+    <color name="sky_blue_dark">#0369A1</color>
+
+    <color name="gold_accent">#F59E0B</color> <color name="orange_warning">#F97316</color>
+    <color name="red_error">#EF4444</color>
+    <color name="error_red">#EF4444</color>
+    <color name="green_success">#10B981</color>
+    <color name="yellow_warning">#FACC15</color>
+
+    <color name="neon_cyan">#38BDF8</color>
+    <color name="neon_magenta">#0284C7</color> <color name="glass_background">#CC1E293B</color> <color name="achievement_unlocked">#A855F7</color> <color name="achievement_locked">#64748B</color> <color name="card_stroke_accent">#38BDF8</color>
+    <color name="card_bg_transparent">#1A38BDF8</color> <color name="white">#F8FAFC</color> <color name="off_white">#E2E8F0</color> 
+    <color name="gray_light">#94A3B8</color>
+    <color name="gray_medium">#64748B</color>
+    <color name="gray_dark">#334155</color>
+    <color name="black">#020617</color>
+
+    <color name="background_main">#0F172A</color>
+    <color name="card_background">#1E293B</color>
+</resources>

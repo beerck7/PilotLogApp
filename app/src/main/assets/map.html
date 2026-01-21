@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+
+        #map {
+            width: 100%;
+            height: 100vh;
+        }
+
+        /* Dark Mode / Night Vision Filters */
+        .leaflet-layer {
+            filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+        }
+
+        /* Custom Plane Icon Style */
+        .plane-icon {
+            background: transparent;
+            border: none;
+        }
+
+        .plane-svg {
+            fill: #00E5FF;
+            /* Neon Cyan */
+            filter: drop-shadow(0 0 5px #00E5FF);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script>
+        var map = L.map('map').setView([52.16, 20.96], 10);
+        var userMarker = null;
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        var markers = {};
+
+        function createPlaneIcon(heading) {
+            return L.divIcon({
+                className: 'plane-icon',
+                html: `<svg class="plane-svg" width="24" height="24" viewBox="0 0 24 24" style="transform: rotate(${heading}deg);">
+                        <path d="M21,16V14L13,9V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V9L2,14V16L10,13.5V19L8,20.5V22L11.5,21L15,22V20.5L13,19V13.5L21,16Z" />
+                       </svg>`,
+                iconSize: [24, 24],
+                iconAnchor: [12, 12]
+            });
+        }
+
+        var userIcon = L.divIcon({
+            className: 'user-icon',
+            html: `<div style="width: 16px; height: 16px; background-color: #00E5FF; border: 2px solid white; border-radius: 50%; box-shadow: 0 0 10px #00E5FF;"></div>`,
+            iconSize: [20, 20],
+            iconAnchor: [10, 10]
+        });
+
+        function updateAircrafts(aircraftJson) {
+            var aircrafts = JSON.parse(aircraftJson);
+            var currentIds = [];
+
+            aircrafts.forEach(function (ac) {
+                var id = ac.icao24;
+                currentIds.push(id);
+                var lat = ac.lat;
+                var lon = ac.lon;
+                var heading = ac.heading;
+                var callsign = ac.callsign;
+
+                var altM = Math.round(ac.alt);
+                var altFt = Math.round(ac.alt * 3.28084);
+                var spdKmh = Math.round(ac.spd * 3.6);
+                var spdKt = Math.round(ac.spd * 1.94384);
+
+                var popupContent = `<b>${callsign}</b><br>
+                                    Alt: ${altFt}ft (${altM}m)<br>
+                                    Spd: ${spdKt}kt (${spdKmh}km/h)`;
+
+                if (markers[id]) {
+                    markers[id].setLatLng([lat, lon]);
+                    markers[id].setIcon(createPlaneIcon(heading));
+                    markers[id].setPopupContent(popupContent);
+                } else {
+                    var marker = L.marker([lat, lon], { icon: createPlaneIcon(heading) })
+                        .bindPopup(popupContent);
+                    marker.addTo(map);
+                    markers[id] = marker;
+                }
+            });
+
+            Object.keys(markers).forEach(function (id) {
+                if (!currentIds.includes(id)) {
+                    map.removeLayer(markers[id]);
+                    delete markers[id];
+                }
+            });
+        }
+
+        function setCenter(lat, lon) {
+            map.setView([lat, lon], 10);
+        }
+
+        function updateUserLocation(lat, lon) {
+            if (userMarker) {
+                userMarker.setLatLng([lat, lon]);
+            } else {
+                userMarker = L.marker([lat, lon], { icon: userIcon }).addTo(map);
+            }
+        }
+    </script>
+</body>
+
+</html>

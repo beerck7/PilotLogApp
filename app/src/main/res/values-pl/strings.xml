@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">PilotLog</string>
+    <string name="title_home">Strona główna</string>
+    <string name="title_dashboard">Pulpit</string>
+    <string name="title_notifications">Powiadomienia</string>
+
+    <string name="title_add_aircraft">Dodaj nowy statek</string>
+    <string name="hint_registration">Rejestracja (np. SP-ABC)</string>
+    <string name="hint_model">Model (np. Cessna 152)</string>
+    <string name="hint_type">Typ (np. SEP(L))</string>
+    <string name="action_cancel">Anuluj</string>
+    <string name="action_add">Dodaj</string>
+
+    <string name="label_date">Data</string>
+    <string name="label_aircraft_caps">STATEK</string>
+    <string name="label_route_caps">TRASA</string>
+    <string name="btn_gps_fix">GPS FIX</string>
+    <string name="hint_dep">ODLOT</string>
+    <string name="hint_arr">PRZYLOT</string>
+    <string name="hint_duration">Czas (min)</string>
+    <string name="hint_launch_method">Rodzaj startu</string>
+    <string name="hint_release_height">Wysokość wyczepienia (m)</string>
+    <string name="hint_remarks">Uwagi</string>
+    <string name="btn_add_photo">DODAJ ZDJĘCIE</string>
+    <string name="btn_log_flight">ZAPISZ LOT</string>
+
+    <string name="btn_import_flights">IMPORTUJ LOTY</string>
+
+    <string name="desc_flight_image">Zdjęcie lotu</string>
+
+    <string name="header_dashboard">PULPIT</string>
+    <string name="label_pilot_rank">RANGA PILOTA</string>
+    <string name="label_next_rank">NASTĘPNA: %1$s</string>
+    <string name="rank_cadet">KADET</string>
+    <string name="rank_officer">OFICER</string>
+    <string name="rank_captain">KAPITAN</string>
+    <string name="rank_ace">AS</string>
+    <string name="rank_legend">LEGENDA</string>
+    <string name="rank_max">MAX RANGA</string>
+    <string name="rank_max_level">MAX POZIOM</string>
+    <string name="rank_progress_format">%1$d / %2$d GODZ</string>
+    <string name="label_total_hours">SUMA GODZIN</string>
+    <string name="label_flights">LOTY</string>
+    <string name="label_metar_auto">AKTUALNY METAR (AUTO)</string>
+    <string name="metar_scanning">Skanowanie...</string>
+    <string name="metar_no_data">Brak Danych</string>
+    <string name="btn_gforce">PRZECIĄŻENIA</string>
+    <string name="btn_checklists">LISTY KONTROLNE</string>
+    <string name="btn_horizon">HORYZONT</string>
+    <string name="label_recent_missions">OSTATNIE MISJE</string>
+    <string name="format_hours_minutes">%1$dh %2$dm</string>
+
+    <string name="title_pilot_profile">PROFIL PILOTA</string>
+    <string name="title_flight_dna">DNA LOTNICZE</string>
+    <string name="title_hall_of_fame">HALA SŁAW</string>
+    <string name="title_license_wallet">PORTFEL LICENCJI</string>
+    <string name="label_valid">WAŻNE</string>
+    <string name="label_in_training">W TRAKCIE</string>
+    <string name="label_expiring">WYGASA</string>
+    <string name="btn_clear_logbook">WYCZYŚĆ LOGBOOK</string>
+    <string name="btn_import_echronometraz">IMPORT Z E-CHRONOMETRAŻ</string>
+
+    <string name="nav_dashboard">Pulpit</string>
+    <string name="nav_logbook">Logbook</string>
+    <string name="nav_map">Mapa</string>
+    <string name="nav_profile">Profil</string>
+    <string name="nav_hangar">Hangar</string>
+
+    <string name="title_weather_radar">RADAR POGODOWY</string>
+    <string name="label_api_key">KLUCZ API</string>
+    <string name="hint_api_key">Wprowadź klucz CheckWX API</string>
+    <string name="label_airport_code">KOD LOTNISKA</string>
+    <string name="hint_airport_code">np. EPWA</string>
+    <string name="btn_scan">SKANUJ</string>
+    <string name="label_metar_current">METAR (AKTUALNY)</string>
+    <string name="label_taf_forecast">TAF (PROGNOZA)</string>
+
+    <string name="title_checklists">LISTY KONTROLNE</string>
+    <string name="btn_reset_checklist">RESETUJ LISTĘ</string>
+
+    <string name="label_current_g">OBECNE G</string>
+    <string name="label_max_g">MAX G</string>
+    <string name="btn_reset_max">RESETUJ MAX</string>
+
+    <string name="dialog_delete_title">Potwierdź usunięcie</string>
+    <string name="dialog_delete_flight_message">Usunąć lot %1$s → %2$s?</string>
+    <string name="dialog_delete_aircraft_message">Usunąć statek %1$s?</string>
+    <string name="action_delete">Usuń</string>
+    <string name="toast_flight_deleted">Lot usunięty</string>
+    <string name="toast_aircraft_deleted">Statek usunięty</string>
+    <string name="toast_aircraft_added">Statek dodany</string>
+    <string name="toast_delete_cancelled">Usuwanie anulowane</string>
+
+    <string name="label_aircraft_photo">ZDJĘCIE STATKU</string>
+    <string name="btn_camera">APARAT</string>
+    <string name="btn_gallery">GALERIA</string>
+
+    <string name="launch_self">Start Własny</string>
+    <string name="launch_winch">Wyciągarka</string>
+    <string name="launch_aerotow">Hol</string>
+    <string name="launch_bungee">Guma</string>
+
+    <string name="tab_pre_flight">PRZED LOTEM</string>
+    <string name="tab_before_takeoff">PRZED STARTEM</string>
+    <string name="tab_landing">LĄDOWANIE</string>
+
+    <string name="check_documents">Dokumenty (AROW) - SPRAWDŹ</string>
+    <string name="check_control_lock">Blokada Sterów - USUŃ</string>
+    <string name="check_ignition_off">Zapłon - WYŁ</string>
+    <string name="check_master_on">Główny Włącznik - WŁ</string>
+    <string name="check_fuel_qty">Ilość Paliwa - SPRAWDŹ</string>
+    <string name="check_flaps_extend">Klapy - WYPUŚĆ</string>
+    <string name="check_master_off">Główny Włącznik - WYŁ</string>
+    <string name="check_exterior">Przegląd Zewnętrzny - ZAKOŃCZONY</string>
+
+    <string name="check_seats_belts">Fotele i Pasy - ZABEZPIECZONE</string>
+    <string name="check_doors">Drzwi i Okna - ZAMKNIĘTE</string>
+    <string name="check_controls_free">Stery - WOLNE i POPRAWNE</string>
+    <string name="check_fuel_both">Paliwo - OBA ZBIORNIKI</string>
+    <string name="check_trim_takeoff">Trymer - START</string>
+    <string name="check_throttle_1700">Przepustnica - 1700 OBR</string>
+    <string name="check_mags">Iskrowniki - SPRAWDŹ (L/P)</string>
+    <string name="check_carb_heat">Podgrzew Gaźnika - SPRAWDŹ</string>
+    <string name="check_ammeter">Amperomierz - SPRAWDŹ</string>
+    <string name="check_suction">Podciśnienie - SPRAWDŹ</string>
+    <string name="check_idle">Bieg Jałowy - SPRAWDŹ</string>
+    <string name="check_throttle_1000">Przepustnica - 1000 OBR</string>
+
+    <string name="check_mixture_rich">Mieszanka - BOGATA</string>
+    <string name="check_carb_heat_on">Podgrzew Gaźnika - WŁ</string>
+    <string name="check_landing_light">Światło Lądowania - WŁ</string>
+    <string name="check_flaps_required">Klapy - WG POTRZEBY</string>
+</resources>
